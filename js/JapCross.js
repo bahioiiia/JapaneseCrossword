@@ -1,6 +1,6 @@
 function solveJapaneseCrossword(rowHints, colHints) {
-    const numRows = rowHints.length;
-    const numCols = colHints.length;
+    const numRows = 10 //rowHints.length;
+    const numCols = 10 //colHints.length;
     
     // Функція для генерації всіх можливих комбінацій блоків для заданих вказівок
     function generateCandidates(hints, length) {
@@ -94,8 +94,8 @@ function solveJapaneseCrossword(rowHints, colHints) {
 }
 
 // Приклад використання:
-const rowHints = [[2], [1, 1], [3], [2]];
-const colHints = [[2], [1, 1], [3], [2]];
+const rowHints = [[1], [2], [2], [1]];
+const colHints = [[1], [2], [2], [1]];
 
 const solution = solveJapaneseCrossword(rowHints, colHints);
 console.log(solution);
